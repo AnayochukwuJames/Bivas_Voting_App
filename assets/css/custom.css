@@ -1,0 +1,34 @@
+body {
+    font-family: 'corbel'
+}
+
+.body-bg {
+    background-image: url(../media/images/brand/logo/crowd.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-theme {
+    background-color: #385723 !important;
+    color: #fff !important;
+}
+
+.text-theme {
+    color: #385723 !important;
+}
+
+.carousel-item img {
+    height: 400px;
+    width: 100%;
+}
+
+.font-theme {
+    font-family: "chiller";
+}
+
+.form {
+    width: 500px;
+    height: 800px;
+
+}

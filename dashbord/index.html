@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BVAS - Dashboard</title>
+    <link rel="stylesheet" href="../assets/bootstrap-4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.13.2/b-2.3.4/b-colvis-2.3.4/b-html5-2.3.4/b-print-2.3.4/cr-1.6.1/sl-1.6.0/datatables.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+
+    <body class="bg-theme">
+        <div class="container-fluid">
+            <div class="mx-md-5 mx-0">
+                <header>
+
+                    <nav class="navbar navbar-expand-md bg-light navbar-light rounded-xlg mt-2">
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="#">
+                            <img src="../assets/media/images/brand/logo/bvas-logo-png.png" width="50" alt="" class="img-fluid rounded-xlg">
+                        </a>
+
+                        <!-- Toggler/collapsibe Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Navbar links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-theme font-weight-bold" href="#"><i class="fa fa-home"></i></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-theme font-weight-bold" href="#"><i class="fa fa-globe"></i></a>
+                                </li>
+                                <!-- Dropdown -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-theme font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
+                                        <i class="fa fa-navicon"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Link 1</a>
+                                        <a class="dropdown-item" href="#">Link 2</a>
+                                        <a class="dropdown-item" href="#">Link 3</a>
+                                    </div>
+                                </li>
+
+                                <!-- Dropdown -->
+                                <li class="nav-item dropdown ml-5 bg-theme rounded-xlg">
+                                    <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
+                                        <i class="fa fa-user"></i> James Zenith
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#"> <i class="fa fa-id-card-o"></i> My Account</a>
+                                        <a class="dropdown-item" href="#"> <i class="fa fa-cog mr-4"></i> Settings</a>
+                                        <a class="dropdown-item" href="#"> <i class="fa fa-outdent"></i> Logout</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <main>
+                    <div class="row page header">
+                        <div class="col-md-6">
+                            <h3 class=" pl-5 text-light text-uppercase">Get a PVC</h3>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <p class="lead pr-5">
+                                <a href="" class="text-light mr-4"><i class="fa fa-home"></i></a>
+                                <span class="mr-4 text-light"><i class="fa fa-caret-right"></i></span>
+                                <span class="text-info">Register</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 my">
+                            <nav class="bg-light rounded-xlg">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-theme"><i class="fa fa-home mr-4"> Dashboard</i></a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-theme"><i class="fa fa-group mr-4"> Candidates</i></a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-theme"><i class="fa fa-thumbs-up mr-4"> Elections</i></a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-theme"><i class="fa fa-users mr-4"> Users</i></a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-theme"><i class="fa fa-list-alt mr-4"> Role</i></a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-theme"><i class="fa fa-id-card-o mr-4"> Voters</i></a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-theme"><i class="fa fa-outdent mr-4"> Logout</i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card border-0 rounded-xlg">
+                                <div class="card-body">
+                                    <div class="border-bottom py-2 mb-3">
+                                        <div class="btn-group">
+                                            <a href="" class="btn btn-primary btn-sm bg-theme"><i class="fa fa-plus"></i></a>
+                                            <a href="" class="btn btn-primary btn-sm bg-theme"><i class="fa fa-list"></i></a>
+                                        </div>
+                                        <div class="btn-group float-right">
+                                            <a href="" class="btn btn-primary btn-sm bg-theme"><i class="fa fa-refresh"></i></a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 my-2">
+                                            <div class="card border-0 shadow-lg">
+                                                <div class="card-body text-dark">
+                                                    <h6 class="card-title">Add New</h6>
+
+                                                    <form action="">
+                                                        <p class="lead"><strong>NB:</strong>All field marked with (<span class="text-danger">*</span>)must field accordingly</p>
+                                                        <div class="card border-0 shadow-sm">
+                                                            <div class="card-body">
+                                                                <fieldset class="border-bottom">
+                                                                    <legend>Bio Info</legend>
+                                                                    <div class="row">
+                                                                        <div class="form-group col-md-6">
+                                                                            <input type="name" placeholder="First Name *" class="form-control">
+                                                                        </div>
+
+                                                                        <div class="form-group col-md-6">
+                                                                            <input type="name" placeholder="Last Name *" class="form-control">
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+
+                                                                            <label for=""><small>Date of Birth</small></label>
+                                                                            <input type="date" placeholder="" class="form-control">
+                                                                        </div>
+
+
+                                                                        <div class="form-group col-md-6">
+                                                                            <select name="" id="" class="form-control">
+                                                                                <option value="">Choose Gender</option>
+                                                                                <option value="">male</option>
+                                                                                <option value="">Female</option>
+                                                                            </select>
+                                                                        </div>
+
+
+                                                                        <div class="form-group col-md-6">
+                                                                            <select name="" id="" class="form-control">
+                                                                                <option value="">Occupation</option>
+                                                                                <option value="">Employed</option>
+                                                                                <option value="">Un-employed</option>
+                                                                                <option value="">Student</option>
+                                                                                <option value="">Military</option>
+                                                                                <option value="">Retaired</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </fieldset>
+
+                                                                <fieldset class="border-bottom">
+                                                                    <legend>Contact Info</legend>
+                                                                    <div class="row">
+
+
+                                                                        <div class="form-group col-md-6">
+                                                                            <input type="email" placeholder="Email Address *" class="form-control">
+                                                                        </div>
+
+                                                                        <div class="form-group col-md-6">
+                                                                            <input type="number" placeholder="Phone Number *" class="form-control">
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <input type="text" placeholder="Home Address 1 *" class="form-control">
+                                                                        </div>
+
+                                                                        <div class="form-group col-md-12">
+                                                                            <input type="text" placeholder="Home Address 2 *" class="form-control">
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <select name="" id="" class="form-control">
+                                                                                <option value="">Chose State</option>
+                                                                                <option value="">Enugu</option>
+                                                                                <option value="">Anambra</option>
+                                                                                <option value="">imo</option>
+                                                                                <option value="">Abuja</option>
+                                                                                <option value="">Jose</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <select name="" id="" class="form-control">
+                                                                                <option value="">Chose LGA</option>
+                                                                                <option value="">Igbo-Etiti</option>
+                                                                                <option value="">Nsukka</option>
+                                                                                <option value="">Ojiriver</option>
+                                                                                <option value="">Enugu-North</option>
+                                                                                <option value="">Nkanu West</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </fieldset>
+                                                                <div class="">
+                                                                    <button class="btn btn-block bg-theme">Register <i class="fa fa-thumbs-up mr-2"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card border-0 shadow-lg">
+                                                <div class="card-body text-dark">
+                                                    <h6 class="card-title mb-3">Manage All</h6>
+                                                    <table class="table datatable table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Firstname</th>
+                                                                <th>Lastname</th>
+                                                                <th>Email</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>John</td>
+                                                                <td>Doe</td>
+                                                                <td>john@example.com</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Mary</td>
+                                                                <td>Moe</td>
+                                                                <td>mary@example.com</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>July</td>
+                                                                <td>Dooley</td>
+                                                                <td>july@example.com</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer></footer>
+            </div>
+        </div>
+    </body>
+
+    <script src="../assets/js/jquery-3.js"></script>
+    <script src="../assets/bootstrap-4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.13.2/b-2.3.4/b-colvis-2.3.4/b-html5-2.3.4/b-print-2.3.4/cr-1.6.1/sl-1.6.0/datatables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.datatable').DataTable();
+        });
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
